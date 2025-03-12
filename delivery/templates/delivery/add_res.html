@@ -1,0 +1,20 @@
+{% extends "delivery/base.html" %} {% block content %}
+<form method="POST">
+    {% csrf_token %}
+
+    <label>Restaurants Name:</label>
+    {{form.Res_name}}
+
+    <label>Food Category:</label>
+    {{form.Food_cat}}
+
+    <label>Rating:</label>
+    {{form.rating}}
+
+    <label>Image:</label>
+    {{form.img}}
+
+    <label>Address:</label>
+    {{form.address}}
+</form>
+{% endblock %}
